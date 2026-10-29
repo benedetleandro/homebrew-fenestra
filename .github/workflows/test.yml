@@ -12,9 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Tap and install
+      - name: Tap, trust and install
         run: |
           brew tap benedetleandro/fenestra
+          brew trust benedetleandro/fenestra
           brew install fenestra
 
       - name: Run the binary

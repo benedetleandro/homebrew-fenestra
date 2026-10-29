@@ -3,15 +3,21 @@
 Homebrew tap for [Fenestra](https://github.com/benedetleandro/fenestra) — a tiny
 local server that opens `dist/index.html` builds in your browser.
 
-```bash
-brew install benedetleandro/fenestra/fenestra
-```
+## Install
 
-Or, to tap first:
+Homebrew asks you to trust third-party taps before loading their formulas. That
+is one extra command, once:
 
 ```bash
 brew tap benedetleandro/fenestra
+brew trust benedetleandro/fenestra
 brew install fenestra
+```
+
+Then, for future installs or a fresh machine:
+
+```bash
+brew install benedetleandro/fenestra/fenestra
 ```
 
 ## What you get
