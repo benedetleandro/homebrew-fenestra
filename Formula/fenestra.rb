@@ -1,14 +1,14 @@
 class Fenestra < Formula
   desc "Local static server that opens HTML builds in your browser"
   homepage "https://github.com/benedetleandro/fenestra"
-  url "https://github.com/benedetleandro/fenestra/releases/download/v0.5.3/fenestra-darwin-arm64.tar.gz"
-  sha256 "1FD3EE21A95EDCE4770CAEE04A1BC3FB068CD8CEA2A28C3A0B5255601A89623E"
+  url "https://github.com/benedetleandro/fenestra/releases/download/v0.6.0/fenestra-darwin-arm64.tar.gz"
+  sha256 "03F1B50718E48FADCEB43B047A50B3DA754F1AEC868D3A419AB5CB1D09C23CFF"
   license "MIT"
-  version "0.5.3"
+  version "0.6.0"
 
   on_intel do
-    url "https://github.com/benedetleandro/fenestra/releases/download/v0.5.3/fenestra-darwin-amd64.tar.gz"
-    sha256 "8AD95E14F8F137411EA07401DE565FFE812498D438DBC54522226CF52E8243E4"
+    url "https://github.com/benedetleandro/fenestra/releases/download/v0.6.0/fenestra-darwin-amd64.tar.gz"
+    sha256 "BA6043F82F9A9461FB77E0558779D465508F4AC6DA07471E7F46657B106AEBFD"
   end
 
   def install
@@ -17,6 +17,6 @@ class Fenestra < Formula
 
   test do
     assert_match "Fenestra", shell_output("#{bin}/fenestra --version")
-    assert_match "0.5.3", shell_output("#{bin}/fenestra --version")
+    assert_match "0.6.0", shell_output("#{bin}/fenestra --version")
   end
 end
