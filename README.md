@@ -1,5 +1,7 @@
 # homebrew-fenestra
 
+English · [Português](README.pt-BR.md)
+
 Homebrew tap for [Fenestra](https://github.com/benedetleandro/fenestra) — a tiny
 local server that opens `dist/index.html` builds in your browser.
 
@@ -25,9 +27,10 @@ brew install benedetleandro/fenestra/fenestra
 The `fenestra` CLI (~6 MB, static, no runtime):
 
 ```bash
-fenestra ~/projetos/app/dist/index.html
+fenestra ~/projects/app/dist/index.html
 fenestra --browsers
 fenestra --browser firefox
+fenestra --port 8080 ~/index.html
 ```
 
 ## What you do not get
