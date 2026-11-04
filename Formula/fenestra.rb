@@ -13,6 +13,7 @@ class Fenestra < Formula
 
   def install
     bin.install "fenestra"
+    pkgshare.install "manual.html"
   end
 
   test do
